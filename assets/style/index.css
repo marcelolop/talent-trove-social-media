@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+:root {
+    --app-index-page-background-color: #f6f7f9;
+    --app-index-base-icon-color: #dfe0e2;
+    --app-index-icon-and-button-color: #4b4b4b;
+    --app-index-icon-and-button-hover-color: #6d95ae;
+    --app-index-content-cards-background-color: #ffffff;
+    --app-index-header-label-color: #4b4b4b;
+    --app-index-subtitles-secondary-text-color: #ededed;
+
+    --app-index-profile-name-color: #131718;
+    --app-index-post-text-colors:#000000;
+    --app-index-base-border-radius: 0.5rem;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: var(--app-index-page-background-color);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.left {
+    flex: 1;
+    background: url('../media/images/login-image.jpg') no-repeat center;
+    background-size: cover;
+}
+
+.left img {
+    opacity: 0.4;
+    width: 100%;
+    height: 100%;
+}
+
+.left h1 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    flex: 1;
+    background-color: var(--app-index-content-cards-background-color);
+}
+
+.right .title{
+    color: var(--app-index-header-label-color);
+    font-size: 2rem;
+    margin-top: 2rem;
+}
+
+.highlight {
+    color: var(--app-index-icon-and-button-hover-color);
+}
+
+.description {
+    color: var(--app-index-header-label-color);
+    font-size: 1.5rem;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+form {
+    width: 40rem;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+.form-group label {
+    display: block;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.4rem;
+    border: 1px solid #ccc;
+    border-radius: var(--app-index-base-border-radius);
+
+    &:focus {
+        outline: var(--app-index-icon-and-button-hover-color) solid 1px;
+    }
+}
+
+.form-group button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: var(--app-index-base-border-radius);
+    color: #fff;
+    border: none;
+}
+
+.login-btn{
+    background-color: var(--app-index-icon-and-button-color);
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: var(--app-index-icon-and-button-hover-color);
+    }
+}
+
+.create-profile-btn{
+    background-color: var(--app-index-icon-and-button-color);
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+        background-color: var(--app-index-icon-and-button-hover-color);
+    }
+}
+
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    gap: 2rem;
+}
+
+.remember-me input, .remember-me label {
+    cursor: pointer;
+}
+
+.remember-me a {
+    color: var(--app-index-icon-and-button-color);
+    text-decoration: none;
+
+    &:hover {
+        color: var(--app-index-icon-and-button-hover-color);
+    }
+}
+
+.feedback {
+    width: 100%;
+    height: 3rem;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.feedback-text{
+    color: #ff0000;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.social-login a {
+    color: var(--app-index-icon-and-button-color);
+    text-decoration: none;
+}
+
+.social-login a:hover {
+    color: var(--app-index-icon-and-button-hover-color)
+}

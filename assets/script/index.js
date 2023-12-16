@@ -60,20 +60,20 @@ localStorage.setItem("password", "abc12345");
 function login(event) {
   event.preventDefault();
 
-  let username = emailInput.value;
+  let userEmail = emailInput.value;
   let password = passwordInput.value;
 
-  if (!validateEmail(username) || !validatePassword(password)) {
+  if (!validateEmail(userEmail) || !validatePassword(password)) {
     return;
   }
 
   if (
-    username === localStorage.getItem("email") &&
+    userEmail === localStorage.getItem("email") &&
     password === localStorage.getItem("password")
   ) {
     window.location.href = "home.html";
   } else {
-    feedbackText.textContent = "Incorrect username or password";
+    feedbackText.textContent = "Incorrect email or password";
   }
 }
 

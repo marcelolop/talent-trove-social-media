@@ -52,7 +52,7 @@ function validatePassword(password) {
   }
 }
 
-// Saving on localStorage
+// Saving on localStorage 
 
 localStorage.setItem("email", "marcelolop@example.com");
 localStorage.setItem("password", "abc12345");
